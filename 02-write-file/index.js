@@ -4,7 +4,7 @@ const { stdin, stdout } = require("process");
 
 
 console.log("Enter some text please:")
-const fileStream = fs.createWriteStream("output.txt", { flags: "a" });
+const fileStream = fs.createWriteStream("02-write-file/output.txt", { flags: "a" });
 
 const rl = readline.createInterface({
     input: stdin,
