@@ -4,7 +4,7 @@ const path = require("path");
 const getFilesInfo = async () => {
     const route = path.resolve(__dirname, "secret-folder");
 
-    const files = await fs.readdir(route, (e, files) => {
+    fs.readdir(route, (e, files) => {
         if (e) {
             console.log(e)
             return;
